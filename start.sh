@@ -40,5 +40,5 @@ docker compose -f "$COMPOSE_FILE" up -d --scale agent="$AGENT_SCALE"
 # Logout (do this at the end to avoid issues if compose pulls during 'up')
 docker logout || true
 
-# Show status
-docker compose -f "$COMPOSE_FILE" ps
+# Success message
+echo "✅ SuprVision stack started successfully."

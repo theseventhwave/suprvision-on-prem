@@ -20,3 +20,6 @@ set -euo pipefail
 COMPOSE_FILE="docker-compose.yaml"
 
 docker compose -f "$COMPOSE_FILE" down --remove-orphans
+
+# Success message
+echo "✅ SuprVision stack stopped successfully."
